@@ -7,9 +7,9 @@ body{
 }
 
 .slider{
-	width: 9vw;
-	height: 1vh;
-	-webkit-appearance: none;
+    width: 9vw;
+    height: 1vh;
+    -webkit-appearance: none;
     appearance: none;
     background: #d3d3d3;
     outline: none;
@@ -31,7 +31,6 @@ body{
 	margin-right: 19vw;
 	border-radius: 16px;
 	width: 5vw;
-	height: 3vh;
 	text-align: center;
 }
 #reset:hover{
