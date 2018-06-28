@@ -1,13 +1,14 @@
 class Pipes {
 	constructor(){
-		this.distance = 300;
-		this.gap = 150;
-		this.w = 100;
-		this.x_values = [width];
-		this.y_values = [Math.random()*(height - this.gap)]
-		this.speed = 6;
+		this.distance = 300; //distance between 2 consecutive pipes;
+		this.gap = 150; //length of gaps in pipes;
+		this.w = 100; //width of each pipe;
+		this.x_values = [width]; //array storing the x-coordinates of the pipes;
+		this.y_values = [Math.random()*(height - this.gap)] //array storing the y-coordinates of the pipes;
+		this.speed = 4;
 	}
 
+	//generate new pipes if total pipes < 10
 	generate(){
 		let a = this.x_values
 		let l = this.x_values.length;
@@ -17,6 +18,7 @@ class Pipes {
 		}
 	}
 
+	//shows pipes on canvas
 	show(){
 		let a = this.x_values
 		let b = this.y_values
@@ -29,6 +31,7 @@ class Pipes {
 		}
 	}
 
+	//updates position of pipes
 	update(){
 		let l = this.x_values.length;
 		for (var i = 0; i < l; i++){
@@ -36,6 +39,7 @@ class Pipes {
 		}
 	}
 
+	//deletes pipes out of the canvas
 	delete(){
 		let a = this.x_values;
 		let l = this.x_values.length;
