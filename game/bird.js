@@ -59,7 +59,7 @@ class Bird {
 		ellipse(this.x, this.y, this.radius, this.radius);
 	}
 
-	//updates positon of bird
+	//updates positon and score of bird
 	update(){
 		this.score += 1;
 		this.vel += this.g;
