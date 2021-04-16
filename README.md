@@ -1,4 +1,4 @@
-# Flappy-Bird-NE
+# Flappy Bird Neuroevolution
 The program learns how to play the game, through the process of neuro-evolution.
 
 Parameters: <br>
